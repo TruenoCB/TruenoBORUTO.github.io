@@ -142,6 +142,7 @@ $(function () {
             $backTop.slideUp(300);
         } else {
             $nav.removeClass('nav-transparent');
+            $nav.addClass('nav-transparent2');
             $backTop.slideDown(300);
         }
     }

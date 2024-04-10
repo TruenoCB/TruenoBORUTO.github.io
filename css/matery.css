@@ -280,7 +280,13 @@ nav {
 }
 
 header .nav-transparent {
-    background-color: rgba(116, 167, 233, 0.871) !important;
+    background-color: transparent !important;
+    background-image: none;
+    box-shadow: none;
+}
+
+header .nav-transparent2 {
+    background-color: rgba(104, 162, 255, 0.895) !important;
     background-image: none;
     box-shadow: none;
 }
