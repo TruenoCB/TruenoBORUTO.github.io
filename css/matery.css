@@ -241,7 +241,7 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #6cd2f7 0%, #3c76e3 100%);
 }
 
 .text-color {
@@ -286,7 +286,7 @@ header .nav-transparent {
 }
 
 header .nav-transparent2 {
-    background-color: rgba(104, 162, 255, 0.895) !important;
+    background-color: rgba(99, 159, 255, 0.895) !important;
     background-image: none;
     box-shadow: none;
 }
@@ -1745,7 +1745,6 @@ thead {
 /*尾部样式*/
 footer {
     padding-bottom: 1px;
-    background-color: rgba(104, 162, 255, 0.895) !important;
 }
 
 footer .social-statis {
