@@ -139,6 +139,7 @@ $(function () {
         let showPosition = 100;
         if (position < showPosition) {
             $nav.addClass('nav-transparent');
+            $nav.removeClass('nav-transparent2');
             $backTop.slideUp(300);
         } else {
             $nav.removeClass('nav-transparent');
