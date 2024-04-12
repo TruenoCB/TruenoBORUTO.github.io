@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>离线部署私服方案</title>
+      <link href="/2024/04/12/chi-xian-bu-shu-si-fu-fang-an/"/>
+      <url>/2024/04/12/chi-xian-bu-shu-si-fu-fang-an/</url>
+      
+        <content type="html"><![CDATA[<p>搭建私服并配置好依赖，更换pip、apt等系统源，使其从私服中拉取依赖</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> devops </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>记一次大连理工实验室docker打包离线环境镜像的操作</title>
       <link href="/2024/04/09/ji-yi-ci-da-lian-li-gong-shi-yan-shi-docker-da-bao-chi-xian-huan-jing-jing-xiang-de-cao-zuo/"/>
       <url>/2024/04/09/ji-yi-ci-da-lian-li-gong-shi-yan-shi-docker-da-bao-chi-xian-huan-jing-jing-xiang-de-cao-zuo/</url>
