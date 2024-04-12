@@ -8,7 +8,7 @@
       <link href="/2024/04/12/chi-xian-bu-shu-si-fu-fang-an/"/>
       <url>/2024/04/12/chi-xian-bu-shu-si-fu-fang-an/</url>
       
-        <content type="html"><![CDATA[<p>搭建私服并配置好依赖，更换pip、apt等系统源，使其从私服中拉取依赖</p>]]></content>
+        <content type="html"><![CDATA[<p>搭建私服并配置好依赖，更换pip、apt等系统源，使其从私服中拉取依赖<br>编写好shell脚本，将私服服务器打包好，并运行端口服务</p>]]></content>
       
       
       
