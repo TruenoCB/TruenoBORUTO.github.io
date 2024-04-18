@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>离线部署私服方案</title>
+      <title>部署后续</title>
       <link href="/2024/04/12/chi-xian-bu-shu-si-fu-fang-an/"/>
       <url>/2024/04/12/chi-xian-bu-shu-si-fu-fang-an/</url>
       
-        <content type="html"><![CDATA[<p>搭建私服并配置好依赖，更换pip、apt等系统源，使其从私服中拉取依赖<br>编写好shell脚本，将私服服务器打包好，并运行端口服务</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="私服部署方案（无侵入式部署）"><a href="#私服部署方案（无侵入式部署）" class="headerlink" title="私服部署方案（无侵入式部署）"></a>私服部署方案（无侵入式部署）</h2><p>如<a href="https://juejin.cn/post/6954983227241005093">https://juejin.cn/post/6954983227241005093</a></p><ul><li>搭建nexus私服并配置好依赖，更换pip、apt等系统源，使其从私服中拉取依赖</li><li>编写好shell脚本，将私服服务器打包好，并运行端口服务</li></ul><h2 id="start-sh脚本编写"><a href="#start-sh脚本编写" class="headerlink" title="start sh脚本编写"></a>start sh脚本编写</h2><h3 id="ubuntu-GUI运行"><a href="#ubuntu-GUI运行" class="headerlink" title="ubuntu GUI运行"></a>ubuntu GUI运行</h3><ul><li>将sh脚本设置可执行权限</li><li>编写deskto文件作为应用图标，mv到&#x2F;usr&#x2F;share&#x2F;applications文件夹下，配置exec的sh路径</li></ul><h3 id="sudo指令问题"><a href="#sudo指令问题" class="headerlink" title="sudo指令问题"></a>sudo指令问题</h3><p>sudo visudo 配置跳过输入密码的指令，即能够在sh脚本中sudo</p><h2 id="其余问题"><a href="#其余问题" class="headerlink" title="其余问题"></a>其余问题</h2><h3 id="文件夹权限"><a href="#文件夹权限" class="headerlink" title="文件夹权限"></a>文件夹权限</h3><p>命令 chown -R user:user path 用于 Linux 和 Unix 系统，其作用是更改某个路径下所有文件和目录的拥有者和群组。<br>这里是具体的解释：<br>chown 是 “change owner” 的缩写，这个命令用于更改文件或目录的所有者和&#x2F;或所属群组。<br>-R 参数表示递归地执行更改，即不仅更改指定路径本身的所有者和群组，还包括其下所有子目录和文件的所有者和群组。<br>user:user 中第一个 user 表示要更改成的所有者用户名，第二个 user 表示要更改成的群组名。这意味着你将文件或目录的所有者和群组都更改为 user。<br>path 是你要更改所有者和群组的文件或目录的路径。<br>总结一下，执行 chown -R user:user path 命令会将 path 路径下的所有文件和目录的所有者和所属群组都更改为 user。这个命令通常在更改文件权限或进行系统管理时使用，需要管理员权限或 root 访问以执行。</p><h3 id="猴子补丁"><a href="#猴子补丁" class="headerlink" title="猴子补丁"></a>猴子补丁</h3><p>如果依赖的库有问题，在conda lib中修改源码并不起作用。</p><ul><li>对于python可以使用猴子补丁的方式替换方法:obj.func &#x3D; myfunc。</li><li>也可以用继承的方式重写父类的方法。</li><li>最后就是修改依赖源码，申请自己的版本，再引用源码。</li></ul>]]></content>
       
       
       
